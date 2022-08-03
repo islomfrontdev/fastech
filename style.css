@@ -1,0 +1,88 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin: 200px auto;
+  animation: 5s anime2 linear infinite;
+}
+@keyframes change {
+  50% {
+    background-color: red;
+    border-radius: 50%;
+    transform: scale(2) translateX(-200px) translateY(-100px);
+  }
+}
+@keyframes anime2 {
+  25% {
+    transform: translateX(200px);
+    background-color: crimson;
+    border-radius: 30px;
+    width: 200px;
+  }
+  50% {
+    transform: translateX(200px) translateY(100px);
+    background-color: yellow;
+    border-radius: 50%;
+  }
+  75% {
+    transform: translateY(100px);
+    background-color: blue;
+    border-radius: 30px;
+  }
+}
+.child {
+  width: 50px;
+  height: 50px;
+  background-color: blueviolet;
+  margin: 10px;
+  animation: anime3 1s linear 2;
+}
+.flex {
+  display: flex;
+}
+@keyframes anime3 {
+  50% {
+    background-color: red;
+  }
+}
+.box2 {
+  animation-delay: 0.5s;
+}
+.box3 {
+  animation-delay: 1s;
+}
+.box4 {
+  animation-delay: 1.5s;
+}
+.box5 {
+  animation-delay: 2s;
+}
+.box6 {
+  animation-delay: 2.5s;
+}
+.box7 {
+  animation-delay: 3s;
+}
+.box8 {
+  animation-delay: 3.5s;
+}
+.box9 {
+  animation-delay: 4s;
+}
+.column {
+  width: 20px;
+  height: 100px;
+  margin: 100px auto;
+  animation: anime4 2s ease-in-out infinite;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+}
+@keyframes anime4 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
